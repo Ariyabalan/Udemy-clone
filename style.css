@@ -69,7 +69,8 @@ body {
     padding: 10px;
     gap: 15px;
 }
-.navbar__s4{
+
+.navbar__s4 {
     display: none;
 }
 
@@ -99,7 +100,6 @@ body {
 .sales-image {
     position: relative;
 }
-
 .sales-image img {
     width: 100%;
 }
@@ -110,8 +110,8 @@ body {
     background-color: white;
     padding: 10px;
     position: absolute;
-    top: 23%;
-    left: 6%;
+    top: 10%;
+    left: 10%;
     animation-name: zoom;
     animation-duration: 2s;
     opacity: 0;
@@ -141,10 +141,11 @@ body {
     margin-top: 10px;
 
 }
+
 .course-card {
-   flex-grow: 1;
-   flex-basis: 20%;
-   margin: 6px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 6px;
 }
 
 .course-card img {
@@ -205,22 +206,27 @@ body {
 }
 
 @media screen and (max-width:800px) {
-    body{
+    body {
         font-size: 10px;
     }
-@media screen and (min-width:400px){
-    .course-card{
-        flex-basis: 40%;
+
+    @media screen and (min-width:400px) {
+        .course-card {
+            flex-basis: 40%;
+        }
+
+        .catgories {
+            display: none;
+        }
+
+        .navbar__s2,
+        .navbar__s3 {
+            display: none;
+        }
+
+        .navbar__s4 {
+            display: block;
+        }
     }
-    .catgories{
-        display: none;
-    }
-    .navbar__s2, .navbar__s3{
-        display: none;
-    }
-    .navbar__s4{
-        display: block;
-    }
-}
 
 }
